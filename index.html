@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -74,7 +74,7 @@
                     <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 flex flex-col items-center text-center">
                         <div className="inline-flex items-center space-x-2 bg-slate-800 rounded-full px-4 py-1.5 mb-8 border border-green-500/50 animate-fade-in-up">
                             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
-                            <span className="text-green-400 font-medium text-sm tracking-wide">Next Cohort: Summer 2025</span>
+                            <span className="text-green-400 font-medium text-sm tracking-wide">Next Cohort: Summer 2026</span>
                         </div>
                         
                         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
@@ -178,7 +178,7 @@
                                 <i className="fa-solid fa-microscope text-green-600"></i> Mission Statement
                             </h3>
                             <p className="text-lg text-slate-700 leading-relaxed">
-                                The Charlotte Bioinformatics Bootcamp aims to expand access to computational biology by empowering underrepresented students with hands-on training in genomics, coding, and molecular biology.
+                                The Charlotte Bioinformatics Bootcamp aims to expand access to computational biology by empowering underrepresented students with hands-on training in genomics, coding, machine learning, and molecular biology.
                             </p>
                         </div>
 
@@ -245,23 +245,25 @@
                                 <div className="border border-slate-200 rounded-xl p-6 hover:border-blue-300 transition">
                                     <div className="flex items-center gap-3 mb-4">
                                         <i className="fa-solid fa-dna text-blue-500 text-xl"></i>
-                                        <h4 className="font-bold text-lg">Module 1: How Cells Control Genes</h4>
+                                        <h4 className="font-bold text-lg">Module 1: Gene Regulation & Genomics Basics</h4>
                                     </div>
                                     <ul className="list-disc list-inside text-slate-600 space-y-2 text-sm">
-                                        <li>Chromatin structure & Histone modifications</li>
-                                        <li>Polycomb (H3K27me3) mechanisms</li>
-                                        <li><strong>Activity:</strong> Build-a-chromatin hands-on model</li>
+                                        <li>What genomics studies & why it matters</li>
+                                        <li>Why cells differ with the same DNA</li>
+                                        <li>3D genome, enhancers, histone marks, Polycomb</li>
+                                        <li>Chromatin model-building activity</li>
                                     </ul>
                                 </div>
 
                                 <div className="border border-slate-200 rounded-xl p-6 hover:border-blue-300 transition">
                                     <div className="flex items-center gap-3 mb-4">
                                         <i className="fa-solid fa-terminal text-blue-500 text-xl"></i>
-                                        <h4 className="font-bold text-lg">Module 2: Coding Bootcamp</h4>
+                                        <h4 className="font-bold text-lg">Module 2: Coding for Beginners</h4>
                                     </div>
                                     <ul className="list-disc list-inside text-slate-600 space-y-2 text-sm">
-                                        <li>What is a biological dataset?</li>
-                                        <li>Variables, loops, and plotting</li>
+                                        <li>What datasets look like (CSV, metadata)</li>
+                                        <li>Variables, functions, simple plotting</li>
+                                        <li>Load data → calculate basic stats → generate plots</li>
                                         <li><strong>Activity:</strong> Guided Jupyter/R Notebook visualization</li>
                                     </ul>
                                 </div>
@@ -275,31 +277,34 @@
                                 <h3 className="text-2xl font-bold text-slate-900">Day 2: Applied Genomics</h3>
                             </div>
                             
-                            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
+                                {/* Module 3 */}
                                 <div className="border border-slate-200 rounded-xl p-6 hover:border-green-300 transition">
                                     <div className="flex items-center gap-3 mb-4">
                                         <i className="fa-solid fa-file-lines text-green-500 text-xl"></i>
-                                        <h4 className="font-bold text-lg">Module 3: RNA-seq & DNA-seq</h4>
+                                        <h4 className="font-bold text-lg">Module 3: Genomics + Chromatin Integration</h4>
                                     </div>
                                     <ul className="list-disc list-inside text-slate-600 space-y-2 text-sm">
-                                        <li>Counts, normalization, volcano plots</li>
-                                        <li>Differentially expressed genes</li>
-                                        <li>Variant calling (SNPs, indels)</li>
+                                        <li>RNA-seq: normalization, volcano plot, gene changes</li>
+                                        <li>DNA-seq: variant identification & IGV visualization</li>
+                                        <li>Chromatin signals: Polycomb peak tracks</li>
+                                        <li>Connect: Variant → Chromatin → Gene Expression</li>
                                     </ul>
                                 </div>
 
+                                {/* Module 4 */}
                                 <div className="border border-slate-200 rounded-xl p-6 hover:border-green-300 transition">
                                     <div className="flex items-center gap-3 mb-4">
                                         <i className="fa-solid fa-microscope text-green-500 text-xl"></i>
-                                        <h4 className="font-bold text-lg">Module 4: CUT&Tag & Imaging</h4>
+                                        <h4 className="font-bold text-lg">Module 4: Imaging + Machine Learning</h4>
                                     </div>
                                     <ul className="list-disc list-inside text-slate-600 space-y-2 text-sm">
-                                        <li>Peak calling basics</li>
-                                        <li>Trajectory visualization</li>
-                                        <li>Single-molecule tracking</li>
+                                        <li>Single-molecule tracking: trajectories & motion patterns</li>
+                                        <li>ML: use imaging features to interpret molecular behavior</li>
                                     </ul>
                                 </div>
 
+                                {/* Module 5 */}
                                 <div className="border border-slate-200 rounded-xl p-6 hover:border-green-300 transition">
                                     <div className="flex items-center gap-3 mb-4">
                                         <i className="fa-solid fa-graduation-cap text-green-500 text-xl"></i>
@@ -311,6 +316,19 @@
                                         <li>Building a scientific LinkedIn</li>
                                     </ul>
                                 </div>
+
+                                {/* Module 6 */}
+                                <div className="border border-slate-200 rounded-xl p-6 hover:border-green-300 transition">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <i className="fa-solid fa-certificate text-green-500 text-xl"></i>
+                                        <h4 className="font-bold text-lg">Module 6: Certificates & Group Photo</h4>
+                                    </div>
+                                    <ul className="list-disc list-inside text-slate-600 space-y-2 text-sm">
+                                        <li>Certificate of completion</li>
+                                        <li>GitHub repository access</li>
+                                        <li>Closing remarks + thank you</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -319,20 +337,22 @@
 
             const renderSchedule = () => {
                 const day1Events = [
-                    { time: "9:00 – 10:30", title: "Gene Regulation & Chromatin Workshop" },
-                    { time: "10:30 – 12:00", title: "3D Genome + Polycomb + GFP Demo" },
+                    { time: "9:00 – 10:30", title: "Module 1: Gene Regulation & Genomics Basics" },
+                    { time: "10:30 – 12:00", title: "3D genome, enhancers, histone marks & chromatin model-building activity" },
                     { time: "12:00 – 1:00", title: "Lunch & Networking (Provided)", type: "break" },
-                    { time: "1:00 – 2:30", title: "Coding Introduction (Python/R)" },
-                    { time: "2:30 – 4:00", title: "Guided Notebook Exercises & First Plots" },
+                    { time: "1:00 – 2:15", title: "Module 2: Coding for Beginners – datasets, variables & plotting" },
+                    { time: "2:15 – 3:30", title: "Activity: Guided Jupyter/R Notebook visualization" },
+                    { time: "3:30 – 4:00", title: "Day 1 recap & Q&A" },
                 ];
 
                 const day2Events = [
-                    { time: "9:00 – 10:30", title: "RNA-seq Analysis" },
-                    { time: "10:30 – 12:00", title: "DNA-seq Variant Basics" },
+                    { time: "9:00 – 10:30", title: "Module 3: Genomics + Chromatin Integration – RNA-seq & DNA-seq" },
+                    { time: "10:30 – 12:00", title: "Module 3: Chromatin signals & connect Variant → Chromatin → Expression" },
                     { time: "12:00 – 1:00", title: "Lunch & Faculty Q&A", type: "break" },
-                    { time: "1:00 – 2:00", title: "CUT&Tag Peak Mapping" },
-                    { time: "2:00 – 3:30", title: "Imaging & Single-Molecule Tracking" },
-                    { time: "3:30 – 5:00", title: "Career Panel & Closing Ceremony" },
+                    { time: "1:00 – 2:15", title: "Module 4: Imaging + Machine Learning – single-molecule tracking" },
+                    { time: "2:15 – 3:30", title: "Module 4: Imaging + Machine Learning – using imaging features for ML" },
+                    { time: "3:30 – 4:15", title: "Module 5: Career Design – PhD vs Biotech vs Clinical, cold-emailing, LinkedIn" },
+                    { time: "4:15 – 5:00", title: "Module 6: Certificates, GitHub access, group photo & closing remarks" },
                 ];
 
                 return (
@@ -347,7 +367,7 @@
                                 <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
                                     <div className="bg-slate-900 p-6 text-white text-center">
                                         <h3 className="text-xl font-bold">Day 1: Foundations</h3>
-                                        <p className="text-green-400 text-sm">Biology & Code Basics</p>
+                                        <p className="text-green-400 text-sm">Gene Regulation & Coding Basics</p>
                                     </div>
                                     <div className="p-6">
                                         {day1Events.map((event, idx) => (
@@ -365,7 +385,7 @@
                                 <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
                                     <div className="bg-slate-900 p-6 text-white text-center">
                                         <h3 className="text-xl font-bold">Day 2: Application</h3>
-                                        <p className="text-blue-400 text-sm">Real Data & Careers</p>
+                                        <p className="text-blue-400 text-sm">Applied Genomics, ML & Careers</p>
                                     </div>
                                     <div className="p-6">
                                         {day2Events.map((event, idx) => (
@@ -823,7 +843,7 @@
                         <i className="fa-solid fa-dna text-green-400"></i> Charlotte Bioinformatics Bootcamp
                         </div>
                         <p className="max-w-sm mb-6 text-sm">
-                        Empowering the next generation of scientists with coding skills and genomic insights. Hosted at UNC Charlotte.
+                        Empowering the next generation of scientists with coding, machine learning skills, and genomic insights. Hosted at UNC Charlotte.
                         </p>
                         <div className="flex gap-4">
                         <i className="fa-brands fa-twitter hover:text-white cursor-pointer text-xl"></i>
